@@ -1,0 +1,12 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "{{ECR_ACCOUNT_NAME}}/{{DOCKER_REPO_NAME}}:{{BUILD_TAG}}",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "8080"
+    }
+  ]
+}
