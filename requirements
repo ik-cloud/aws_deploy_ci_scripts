@@ -1,0 +1,8 @@
+#
+####### python requirements #######
+#
+###### Requirements without Version Specifiers ######
+boto3
+botocore
+awscli
+awsebcli

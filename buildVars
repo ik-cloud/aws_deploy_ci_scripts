@@ -1,0 +1,3 @@
+# project variables
+export VIRTUAL_ENVIRONMENT="ve-boto3-aws"
+

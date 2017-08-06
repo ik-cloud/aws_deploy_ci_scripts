@@ -101,3 +101,5 @@ ENV/
 .mypy_cache/
 .idea
 /beanstalk/beanstalk_configs/Dockerrun.aws.json
+# virtual environment
+ve-boto3*
