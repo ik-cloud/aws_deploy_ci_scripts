@@ -1,0 +1,12 @@
+[
+  {
+    "Namespace": "aws:elasticbeanstalk:application:environment",
+    "OptionName": "secret.token",
+    "Value": "{{s3:secret.json:authtoken}}"
+  },
+  {
+    "Namespace": "aws:elasticbeanstalk:application:environment",
+    "OptionName": "another.token",
+    "Value": "simple"
+  }
+]
