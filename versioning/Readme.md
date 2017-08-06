@@ -21,4 +21,5 @@
 4. Make most recent entry be on top of the list.
 6. Name of the file should be the same as application name.
 7. Read File from S3 bucket in an account.
-8. Write file back to S3 bucket in same account. 
+8. Write file back to S3 bucket in same account.
+9. Create script file as an example for CI.
