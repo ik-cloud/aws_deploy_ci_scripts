@@ -1,4 +1,4 @@
-# AWS_Beanstalk_Deploy
+# AWS CI and Deploy Scripts
 Simple CI scripts for ElasticBeanstalk with Docker.
 
 

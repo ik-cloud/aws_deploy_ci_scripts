@@ -100,4 +100,4 @@ ENV/
 # mypy
 .mypy_cache/
 .idea
-/beanstalk_configs/Dockerrun.aws.json
+/beanstalk/beanstalk_configs/Dockerrun.aws.json
