@@ -5,3 +5,5 @@
 boto3
 httplib2
 awsebcli
+botocore
+awscli
