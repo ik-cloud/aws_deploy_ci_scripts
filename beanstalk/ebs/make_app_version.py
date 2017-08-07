@@ -76,7 +76,7 @@ def __create_app_version(app_name, version, bucket, key):
             'S3Bucket': bucket,
             'S3Key': key
         },
-        AutoCreateApplication=False,
+        AutoCreateApplication=True,
         Process=True
     )
     print("Creates an '{}' version '{}'".format(app_name, version))
