@@ -3,10 +3,11 @@ Simple CI scripts for ElasticBeanstalk with Docker.
 
 
 ## Prerequisits
-installed pip
+Provision pip. My require 'sudo' permission.
 
 ```bash
- sudo pip install -r requirements.txt
+ sudo apt-get install -y python-pip
+ sudo -H pip install --upgrade pip
 ```
 
 ## Create Virtual Environment
