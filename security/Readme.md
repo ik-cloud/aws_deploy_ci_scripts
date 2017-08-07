@@ -27,3 +27,8 @@
 ```
 6. AWS UI and CLI access should be disabled for USERS/GROUPS with insufficient
  priviledges.
+
+### Create Self signed certificate
+```bash
+  ./self_sign_cert.sh
+```
