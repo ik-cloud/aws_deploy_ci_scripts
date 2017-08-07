@@ -5,5 +5,4 @@ REMOTECONFIG="secret.json"
 PARAMETERS="parameters.json"
 ENV="dev"
 
-${BASEDIR}/dsl/substitute_secret.py  --env "${ENV}" --remoteconf "${REMOTECONFIG}" \
-   --params "${PARAMETERS}"
+${BASEDIR}/dsl/substitute_secret.py  --env "${ENV}"  --params "${ENV}.${PARAMETERS}"
