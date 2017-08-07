@@ -13,7 +13,7 @@ installed pip
 
 Install Python Virtual Env prerequisits
 ```bash
- sudo pip install -r requirements
+ sudo pip install -r prerequisits
 ```
 
 Create Virtual environment
