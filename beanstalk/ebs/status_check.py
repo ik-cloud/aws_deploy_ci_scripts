@@ -60,19 +60,20 @@ def check_app_status(application, app_environment):
 def app_status_block(application, app_environment):
     status = ''
     health = ''
-
+    timetowait = 20
     while 'Ready' != status and 'Green' != health:
+        time.sleep(timetowait)
         check = __execute(application=application, app_environment=app_environment)
         status = check['status_env']
         health = check['health_env']
-        timetowait = 20
         print "Environment Status --{}-- and Health --{}--. Health Check Status --{}-- and Response --{}--" \
             .format(status, health, check['status_app'], check['health_app'])
         if 'Ready' == status and 'Green' == health:
+            print 'Environment deployed'
             break
-        elif health in {'Yellow', 'Red'} or ('Ready' == status and 'Grey' == health):
+        elif health in {'Yellow', 'Red', ''} or ('Ready' == status and 'Grey' == health):
             show_events(application=application, app_environment=app_environment, eventtype='WARN', seconds=timetowait)
             print "Failed Deploy New Configuration. Health {}. Status {}".format(health, status)
             raise EnvironmentError()
         elif status in {'Updating', 'Launching'} or 'Grey' == health:
-            time.sleep(timetowait)
+            pass
